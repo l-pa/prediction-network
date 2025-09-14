@@ -5,12 +5,14 @@ This repository contains the code and resources used in the 2025 paper **"A Netw
 
 It includes implementations for generating and analyzing prediction networks of protein complexes, evaluation scripts, and data processing tools. The repository is intended to support reproducibility and further exploration of network-based protein complex prediction methods.
 
+The project includes a main script `main.py` that takes two parameters. The first parameter is a folder containing prediction and reference files: predictions must end with `clusters.txt` and references must end with `complexes.txt`. The second parameter is the overlap score threshold used for analysis.
+
 ## Contents
 
-- `data/` – Input datasets and processed network files  
-- `scripts/` – Analysis and visualization scripts  
-- `notebooks/` – Jupyter notebooks demonstrating key analyses  
-- `results/` – Output from prediction networks and evaluation  
+- `main.py` – Main script.  
+- `PCC.tsv` – GO terms exported as TSV from QuickGO.  
+- `SGD_features.tab` – GO protein annotations to GO terms.
+
 
 
 ## Description of node and edge attributes in the GDF output
