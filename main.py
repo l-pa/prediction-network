@@ -77,7 +77,7 @@ import glob
 import sys
 
 NETWORK_NAME = sys.argv[1]
-THRESHOLD = 0.25
+THRESHOLD = sys.argv[2]
 
 cluster_files = glob.glob(f"{NETWORK_NAME}/*clusters.txt")
 # Dictionary to store cluster data
